@@ -42,6 +42,6 @@ mbg2.build.mcu=attiny85
 mbg2.build.f_cpu=16500000L
 mbg2.build.core=midibabygnusbuino
 mbg2.build.variant=attiny85-53
-bg2.build.board=MIDIBABYGNUSBUINO2
+mbg2.build.board=MIDIBABYGNUSBUINO2
 
 ##############################################################
