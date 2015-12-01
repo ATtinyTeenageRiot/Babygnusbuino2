@@ -19,11 +19,11 @@
           },
           "url": "https://github.com/ATtinyTeenageRiot/Babygnusbuino2/archive/0.0.1.zip",
           "archiveFileName": "0.0.1.zip",
-          "checksum": "SHA-256:bfffa4a700e42ae993895f5eea22bc369ba5ac3ea36eca18ac5f72a05bb60ab5",
-          "size": "5005",
+          "checksum": "SHA-256:07012e7659bc8b77580158c9f0289bc3818976a0053a4dec4ad7625554faf551",
+          "size": "2816992",
           "boards": [
             {"name": "Babygnusbuino2"},
-            {"name": "BabyMidignusbuino2"},
+            {"name": "BabyMidignusbuino2"}
           ],
           "toolsDependencies": [
             {
