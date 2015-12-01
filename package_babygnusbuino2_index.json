@@ -1,0 +1,45 @@
+{
+  "packages": [
+    {
+      "name": "Babygnusbuino2",
+      "maintainer": "Budi Prakosa",
+      "websiteURL": "https://github.com/ATtinyTeenageRiot/Babygnusbuino2",
+      "email": "iyok@deadmediafm.org",
+      "help": {
+        "online": ""
+      },
+      "platforms": [
+        {
+          "name": "Babygnusbuino2",
+          "architecture": "avr",
+          "version": "0.0.1",
+          "category": "attiny",
+          "help": {
+            "online": ""
+          },
+          "url": "https://github.com/ATtinyTeenageRiot/Babygnusbuino2/archive/0.0.1.zip",
+          "archiveFileName": "0.0.1.zip",
+          "checksum": "SHA-256:bfffa4a700e42ae993895f5eea22bc369ba5ac3ea36eca18ac5f72a05bb60ab5",
+          "size": "5005",
+          "boards": [
+            {"name": "Babygnusbuino2"},
+            {"name": "BabyMidignusbuino2"},
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "arduino",
+              "name": "avr-gcc",
+              "version": "4.8.1-arduino5"
+            },
+            {
+              "packager": "arduino",
+              "name": "avrdude",
+              "version": "6.0.1-arduino5"
+            }
+          ]
+        }
+      ],
+      "tools": []
+    }
+  ]
+}
