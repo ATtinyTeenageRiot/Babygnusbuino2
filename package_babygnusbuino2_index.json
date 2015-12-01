@@ -17,9 +17,9 @@
           "help": {
             "online": ""
           },
-          "url": "https://github.com/ATtinyTeenageRiot/Babygnusbuino2/archive/0.0.1.zip",
+          "url": "https://github.com/ATtinyTeenageRiot/Babygnusbuino2/releases/download/0.0.1/0.0.1.zip",
           "archiveFileName": "0.0.1.zip",
-          "checksum": "SHA-256:07012e7659bc8b77580158c9f0289bc3818976a0053a4dec4ad7625554faf551",
+          "checksum": "SHA-256:bb2f09d8a5ae4b06deaa4fd4b6d31dfbaf18998191139bd388356d81a8460911",
           "size": "2816992",
           "boards": [
             {"name": "Babygnusbuino2"},
