@@ -1,0 +1,3 @@
+[submodule "avr/libraries/GnusbuinoMIDI"]
+	path = avr/libraries/GnusbuinoMIDI
+	url = git@github.com:ATtinyTeenageRiot/GnusbuinoMIDI.git
