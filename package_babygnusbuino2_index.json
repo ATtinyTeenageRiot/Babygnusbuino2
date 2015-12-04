@@ -19,7 +19,7 @@
           },
           "url": "https://github.com/ATtinyTeenageRiot/Babygnusbuino2/releases/download/0.0.1/0.0.1.tar.gz",
           "archiveFileName": "0.0.1.tar.gz",
-          "checksum": "SHA-256:a31febd77e8b45eccfe0a5773b6523bae1d3b1bdd55c160d30b5aa2682ab2be5",
+          "checksum": "SHA-256:6f8675e938002c1e7c8c49f6a10314e7ee2067150df0596f5bd9b798942475c0",
           "size": "2816992",
           "boards": [
             {"name": "Babygnusbuino2"},
