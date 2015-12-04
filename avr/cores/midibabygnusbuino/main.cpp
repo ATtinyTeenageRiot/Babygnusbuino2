@@ -143,6 +143,19 @@ unsigned char usbFunctionWrite(unsigned char * data, unsigned char len)
 /*---------------------------------------------------------------------------*/
 void usbFunctionWriteOut(unsigned char * data, unsigned char len)
 {
+	if (len == 4)
+	{
+		//00000000  07 F0 08 F7              . ð . ÷          
+		if (	
+			data[0] == 0x07 && data[1] == 0xF0 && data[2] == 0x08 && data[3] == 0xF7
+			)
+		{
+			startBootloader();
+		}
+	}
+
+
+	return;
 
 	statusLedBlink(StatusLed_Yellow);
 
