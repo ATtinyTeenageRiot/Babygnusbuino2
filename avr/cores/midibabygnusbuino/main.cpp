@@ -14,22 +14,22 @@
  
  
 
-unsigned long blinkstop;
+// unsigned long blinkstop;
 
 #if defined(__AVR_ATtiny85__)
-void statusLedOff(StatusLeds led) 		{}
-void statusLedOn(StatusLeds led) 		{}
-void statusLedToggle(StatusLeds led)	{}
-void statusLedBlink(StatusLeds led) {}
+// void statusLedOff(StatusLeds led) 		{}
+// void statusLedOn(StatusLeds led) 		{}
+// void statusLedToggle(StatusLeds led)	{}
+// void statusLedBlink(StatusLeds led) {}
 
 #else
-void statusLedOff(StatusLeds led) 		{PORTD &= ~(1 << led); }
-void statusLedOn(StatusLeds led) 		{PORTD |= (1 << led);}
-void statusLedToggle(StatusLeds led)	{PORTD ^= 1 << led;}
-void statusLedBlink(StatusLeds led) {
-		statusLedOn(led);
-		blinkstop = millis()+50;
-}
+// void statusLedOff(StatusLeds led) 		{PORTD &= ~(1 << led); }
+// void statusLedOn(StatusLeds led) 		{PORTD |= (1 << led);}
+// void statusLedToggle(StatusLeds led)	{PORTD ^= 1 << led;}
+// void statusLedBlink(StatusLeds led) {
+// 		statusLedOn(led);
+// 		blinkstop = millis()+50;
+// }
 #endif
 
 // ------------------------------------------------------------------------------
@@ -157,7 +157,7 @@ void usbFunctionWriteOut(unsigned char * data, unsigned char len)
 
 	return;
 
-	statusLedBlink(StatusLed_Yellow);
+	// statusLedBlink(StatusLed_Yellow);
 
 	while (len >= sizeof(midi_msg)) {
 	
@@ -180,12 +180,12 @@ void usbFunctionWriteOut(unsigned char * data, unsigned char len)
 
 void doPeriodical(void) {
 
-		if (blinkstop) {
-			if (millis() >= blinkstop) {
-				statusLedOff(StatusLed_Yellow);
-				blinkstop = 0;
-			}
-		}	
+		// if (blinkstop) {
+		// 	if (millis() >= blinkstop) {
+		// 		statusLedOff(StatusLed_Yellow);
+		// 		blinkstop = 0;
+		// 	}
+		// }	
 		
 		usbPoll();
 		MIDI.sendMIDI();        
