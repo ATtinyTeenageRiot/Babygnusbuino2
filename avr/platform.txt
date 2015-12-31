@@ -13,7 +13,7 @@ compiler.c.flags=-c -g -Os -w -ffunction-sections -fdata-sections -MMD -I{build.
 # This is fixed in gcc 4.8.3 and will be removed as soon as we update the toolchain
 compiler.c.elf.flags=-w -Os -Wl,--gc-sections
 compiler.c.elf.cmd=avr-gcc
-compiler.S.flags=-c -g -x assembler-with-cpp
+compiler.S.flags=-c -g -x assembler-with-cpp -I{build.path}
 compiler.cpp.cmd=avr-g++
 compiler.cpp.flags=-c -g -Os -w -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -I{build.path}
 compiler.ar.cmd=avr-ar
