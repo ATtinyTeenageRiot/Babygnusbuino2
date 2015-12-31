@@ -8,14 +8,14 @@ version=2.0
 compiler.path={runtime.tools.avr-gcc.path}/bin/
 compiler.ld.path=/wew
 compiler.c.cmd=avr-gcc
-compiler.c.flags=-c -g -Os -w -ffunction-sections -fdata-sections -MMD
+compiler.c.flags=-c -g -Os -w -ffunction-sections -fdata-sections -MMD -I{build.path}
 # -w flag added to avoid printing a wrong warning http://gcc.gnu.org/bugzilla/show_bug.cgi?id=59396
 # This is fixed in gcc 4.8.3 and will be removed as soon as we update the toolchain
 compiler.c.elf.flags=-w -Os -Wl,--gc-sections
 compiler.c.elf.cmd=avr-gcc
 compiler.S.flags=-c -g -x assembler-with-cpp
 compiler.cpp.cmd=avr-g++
-compiler.cpp.flags=-c -g -Os -w -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -I{runtime.platform.path}/libraries/GnusbuinoMIDI
+compiler.cpp.flags=-c -g -Os -w -fno-exceptions -ffunction-sections -fdata-sections -fno-threadsafe-statics -MMD -I{build.path}
 compiler.ar.cmd=avr-ar
 compiler.ar.flags=rcs
 compiler.objcopy.cmd=avr-objcopy
