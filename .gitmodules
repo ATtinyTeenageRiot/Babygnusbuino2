@@ -4,3 +4,6 @@
 [submodule "avr/tools/avrdude"]
 	path = avr/tools/avrdude
 	url = git@github.com:ATtinyTeenageRiot/AvrdudeGnusbuinoMidi2Kicker.git
+[submodule "avr/libraries/TeenageMidi"]
+	path = avr/libraries/TeenageMidi
+	url = git@github.com:ATtinyTeenageRiot/TeenageMidi.git
